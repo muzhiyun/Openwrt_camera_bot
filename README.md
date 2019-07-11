@@ -1,5 +1,12 @@
 ### 2019校级电赛项目
 
+基于Openwrt搭载UVC摄像头及串口传感器  配合PHP+MySQL与docker版酷Q机器人实现类似智能安防报警的效果
+
+主动查询
+    
+![demo.jpg](https://github.com/muzhiyun/Openwrt_camera_bot/blob/master/demo.jpg)
+
+
 #### 文件说明
 
 - PHP           
