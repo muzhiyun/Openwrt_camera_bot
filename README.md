@@ -59,8 +59,9 @@
 
 #### 接口说明
 
-	#### 图片预览后台 
-[http://192.168.2.174/bot/echo_photo.php](http://192.168.2.174/bot/echo_photo.php "http://192.168.2.174/bot/echo_photo.php")
+
+#### 图片预览后台 
+[http://192.168.2.174/bot/index.php](http://192.168.2.174/bot/index.php "http://192.168.2.174/bot/index.php")
 
 - 请求方式：http直接访问  
 
