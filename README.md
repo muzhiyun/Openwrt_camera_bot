@@ -11,6 +11,10 @@
     
 ![demo.jpg](https://github.com/muzhiyun/Openwrt_camera_bot/blob/master/demo.jpg)
 
+<img src="https://github.com/muzhiyun/Openwrt_camera_bot/raw/master/demo.jpg" width="356" height="399" alt="demo.jpg"/>
+
+<img src="https://github.com/muzhiyun/Openwrt_camera_bot/raw/master/demo.jpg" alt="demo.jpg" style="max-width:40%;">
+
 - 主动报警
 
 在shell脚本中可设定当获取到的传感器值超出指定阈值时，通过curl调用酷Q的HTTPApi接口主动发送报警信息
