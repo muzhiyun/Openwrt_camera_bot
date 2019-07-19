@@ -9,17 +9,16 @@
 
 向机器人发送指定关键词，机器人回复相应数据(传感器数值、连接设备数、照片等，更新频率由shell脚本执行频率决定)
     
-![demo.jpg](https://github.com/muzhiyun/Openwrt_camera_bot/blob/master/demo.jpg)
 
 <img src="https://github.com/muzhiyun/Openwrt_camera_bot/raw/master/demo.jpg" width="356" height="399" alt="demo.jpg"/>
 
-<img src="https://github.com/muzhiyun/Openwrt_camera_bot/raw/master/demo.jpg" alt="demo.jpg" style="max-width:40%;">
 
 - 主动报警
 
 在shell脚本中可设定当获取到的传感器值超出指定阈值时，通过curl调用酷Q的HTTPApi接口主动发送报警信息
 
-![demo2.jpg](https://github.com/muzhiyun/Openwrt_camera_bot/blob/master/demo2.jpg)
+
+<img src="https://github.com/muzhiyun/Openwrt_camera_bot/raw/master/demo2.jpg" width="529" height="159" alt="demo2.jpg"/>
 
 ### 预开发功能
 		
