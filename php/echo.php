@@ -25,8 +25,8 @@ if ($password!="bot")
 	exit();
 }
 
-function try_json_encode($temp_temp,$humi_temp,$time_temp){
-	$before=array("temp"=>$temp_temp,"humi"=>$humi_temp,"time"=>$time_temp);
+function try_json_encode($temp_temp,$humi_temp,$num_temp,$time_temp){
+	$before=array("temp"=>$temp_temp,"humi"=>$humi_temp,"devices"=>$num_temp,"time"=>$time_temp);
 	$after=json_encode($before);
 	#echo gettype($before);
 	#echo "</br>";
@@ -41,7 +41,7 @@ function try_json_encode($temp_temp,$humi_temp,$time_temp){
 
 
 require "connet.php";					//数据库部分
-	$last="SELECT time,temp,humi,flag,makes FROM bot where makes = "."'".$password."'";
+	$last="SELECT time,temp,humi,num,flag,makes FROM bot where makes = "."'".$password."'";
 	#echo $last;
 	$result = $conn->query($last);
 	$row = $result->fetch_assoc();
@@ -50,7 +50,7 @@ require "connet.php";					//数据库部分
 	#echo "最后更新时间：</br>".$row["time"];
 	#echo "</br>";
 	#echo "路由器当前IP：</br>".$row["ip"];
-	echo try_json_encode($row["temp"],$row["humi"],$row["time"]);
+	echo try_json_encode($row["temp"],$row["humi"],$row["num"],$row["time"]);
 	#echo ($result);
 	#$conn->query($sql);
 	$conn->close();

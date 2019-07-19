@@ -2,6 +2,7 @@
 $temp=$_POST["temp"];
 $humi=$_POST["humi"];
 $flag=$_POST["flag"];
+$num=$_POST["num"];
 $password=$_POST["password"];
 
 if ($password!="bot")
@@ -55,9 +56,9 @@ require "connet.php";					//数据库部分
 	$del="delete from `bot`  WHERE `makes`="."'".$password."'";
 	#iecho ($del);
 	$conn->query($del);
-	$sql="INSERT INTO bot (time,temp,humi,flag,makes) VALUES (now(),'$temp','$humi','$flag','$password')";
+	$sql="INSERT INTO bot (time,temp,humi,num,flag,makes) VALUES (now(),'$temp','$humi','$num','$flag','$password')";
 	$conn->query($sql);
-	echo $sql;	
+	#echo $sql;	
 	$conn->close();
 #apidata($data);
 ?>
